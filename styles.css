@@ -1,0 +1,83 @@
+body {
+    background-color: #ffffff;
+    margin: 90px;
+    margin-top: 15px;
+}
+
+h1 {
+    color: #000000;
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 70px;
+}
+p {
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+    color: #000000;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+a.button {
+    background-color: green;
+}
+div.nav {
+    /* position: fixed; */
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul.nav_elements {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    /* align-items: flex-end; */
+    /* justify-content: space-around; */
+}
+ul.nav_elements li.nav_elements {
+    margin: 10px;
+}
+li.nav_elements a:hover {
+    background-color: green;
+}
+li.nav_elements.active {
+    background-color: chartreuse;
+}
+.nav_logo {
+    color: green;
+    font-size: 30px;
+}
+div#hero_section {
+    background-image: url('images/hero_image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+div#text_and_button {
+    display: flex;
+    flex-flow: column wrap;
+}
+div#servicesintro_section {
+
+}
+div#servicesintro_section img {
+    width: 30%;
+    height: 100px;
+    object-fit: cover;
+}
+div.img_grid {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
