@@ -5,25 +5,31 @@ body {
 }
 
 h1 {
-    color: #000000;
+    color: #13222F;
     font-size: 48px;
     font-family: 'Montserrat', sans-serif;
 }
+
 h2 {
+    color: #13222F;
     font-family: 'Montserrat', sans-serif;
     margin-top: 70px;
 }
 p {
-    color: #000000;
+    color: #2E3A44;
     font-family: 'Montserrat', sans-serif;
+    margin-bottom: 40px;
 }
 a {
-    color: #000000;
+    color: #2E3A44;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
 }
 a.button {
-    background-color: green;
+    color: #ffffff;
+    background-color: #20A957;
+    padding: 10px;
+    /* margin-top: 50px; */
 }
 div.nav {
     /* position: fixed; */
@@ -45,13 +51,13 @@ ul.nav_elements li.nav_elements {
     margin: 10px;
 }
 li.nav_elements a:hover {
-    background-color: green;
+    color: #7A848D;
 }
-li.nav_elements.active {
-    background-color: chartreuse;
+a.active {
+    color: #20A957;
 }
 .nav_logo {
-    color: green;
+    color: #20A957;
     font-size: 30px;
 }
 div#hero_section {
@@ -63,6 +69,9 @@ div#hero_section {
     display: flex;
     align-items: center;
 }
+@media (max-width: 760px) {
+
+}
 div#text_and_button {
     display: flex;
     flex-flow: column wrap;
@@ -72,12 +81,25 @@ div#servicesintro_section {
 }
 div#servicesintro_section img {
     width: 30%;
-    height: 100px;
-    object-fit: cover;
+    height: 20%;
+    object-fit: fill;
 }
 div.img_grid {
     display: flex;
     flex-flow: row wrap;
     margin-top: 30px;
     margin-bottom: 30px;
+    gap: 10px;
 }
+
+/* width of buttons 100%
+   Max width: 300px
+   margin: 10px 20px 
+   by setting wdith to 100%, as you
+   start to squeeze it down, the elements 
+   will move down 
+   
+   media query: under a certain size, the image will be 100%
+   to avoid tiny sliver of text on the side
+   
+   adjust font sizes*/
