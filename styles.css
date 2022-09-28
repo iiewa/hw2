@@ -113,10 +113,13 @@ div.img_grid {
 }
 .contact_text {
     margin-left: 5%;
-
+}
+.color_text {
+    color: #20A957;
 }
 #contact_image {
-    width: 100%;
+    height: 100%;
+    object-fit: fill;
 }
 
 @media screen and (max-width: 600px) {
@@ -144,22 +147,4 @@ div.img_grid {
         max-height: 130px;
         object-fit: cover;
     }
-    #contact_image {
-        max-height: 400px;
-    }
-    .color_text {
-        color: #20A957;
-    }
 }
-
-/* width of buttons 100%
-   Max width: 300px
-   margin: 10px 20px 
-   by setting wdith to 100%, as you
-   start to squeeze it down, the elements 
-   will move down 
-   
-   media query: under a certain size, the image will be 100%
-   to avoid tiny sliver of text on the side
-   
-   adjust font sizes*/
