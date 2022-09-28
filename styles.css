@@ -121,6 +121,9 @@ div.img_grid {
     height: 100%;
     object-fit: fill;
 }
+#heart {
+    position: fixed;
+}
 
 @media screen and (max-width: 600px) {
     .nav {
